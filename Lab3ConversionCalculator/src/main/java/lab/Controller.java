@@ -16,7 +16,7 @@ import java.text.DecimalFormat;
 public class Controller {
     private DecimalFormat df = new DecimalFormat("#.##");
     @FXML
-    private Button clalculate;
+    private Button calculate;
 
     @FXML
     private Button clear;
@@ -123,59 +123,59 @@ public class Controller {
         cmT.setText(""+ df.format(m2cm( meters)));
     }
 
-    public double cm2in(double cm ){
+    public static double cm2in(double cm ){
         return cm * 0.393701;
     }
 
-    public double cm2m(double cm){
+    public static double cm2m(double cm){
         return cm * 0.0100000054;
 
     }
-    public double cm2y(double cm){
+    public static double cm2y(double cm){
 
         return cm * 0.0109361;
     }
 
-    public double in2cm(double inches){
+    public static double in2cm(double inches){
 
         return inches * 2.53999233936;
     }
 
-    public double in2y(double inches){
+    public static double in2y(double inches){
 
         return inches * 0.0277778;
     }
 
-    public double in2m(double inches){
+    public static double in2m(double inches){
 
         return inches * 0.02540002032;
     }
 
-    public double y2m(double yards){
+    public static double y2m(double yards){
 
         return yards * 0.91440073152;
     }
 
-    public double y2in(double yards){
+    public static double y2in(double yards){
 
         return yards * 36.0000288;
     }
 
-    public double y2cm(double yards){
+    public static double y2cm(double yards){
 
         return yards * 91.440073152;
     }
 
-    public double m2y(double meters){
+    public static double m2y(double meters){
 
         return meters * 1.09361417323;
     }
 
-    public double m2in(double meters){
+    public static double m2in(double meters){
 
         return meters * 39.370110236279998617;
     }
-    public double m2cm(double meters){
+    public static double m2cm(double meters){
 
         return meters * 100.00008;
     }
