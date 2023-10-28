@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70e117a-ca56-4736-b55d-44756f802b72" name="Changes" comment="" />
+    <list default="true" id="f70e117a-ca56-4736-b55d-44756f802b72" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finals/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finals/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finals/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finals/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finals/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../finals/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9ReversiveRecursive/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9ReversiveRecursive/src/main/java/ReversiveRecursive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9ReversiveRecursive/src/main/java/ReversiveRecursive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9ReversiveRecursive/target/classes/ReversiveRecursive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9ReversiveRecursive/target/classes/ReversiveRecursive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9ReversiveRecursive/target/classes/Word.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9ReversiveRecursive/target/classes/Word.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9ReversiveRecursive/target/test-classes/RecursiveTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9ReversiveRecursive/target/test-classes/RecursiveTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project3MiniPaint/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project3MiniPaint/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project3MiniPaint/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project3MiniPaint/src/main/java/project/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project3MiniPaint/src/main/java/project/Controller.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,19 +36,29 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2HHaxZHfM0OS2BnWv1Fo2717GTR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/excel/Desktop/Classes/CS16100/Project2Blackjack&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Excell Pepple\Downloads\Project2Blackjack\src\main\resources" />
@@ -68,10 +97,23 @@
       <workItem from="1670185417512" duration="13806000" />
       <workItem from="1670294426142" duration="4997000" />
       <workItem from="1670362593339" duration="6411000" />
+      <workItem from="1677882944302" duration="2156000" />
+      <workItem from="1679930526726" duration="3006000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

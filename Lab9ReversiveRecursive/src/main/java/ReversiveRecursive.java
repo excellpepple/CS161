@@ -21,13 +21,18 @@ public class ReversiveRecursive {
 		
 	}
 	
-	public static void wordCount(RandomAccessFile reader, ArrayList<Word> words) throws IOException {
-		Word w = new Word(reader.readUTF());
-		if (!words.contains(w)) {
-			words.add(w);
-		} else {
-
+	public static  void wordCount(RandomAccessFile reader, ArrayList<Word> words) throws IOException {
+		if (reader.getFilePointer() != reader.length()){
+			Word w = new Word(reader.readUTF());
+			if (words.contains(w)) {
+				words.add(w);
+				wordCount(reader, words);
+			} else{
+				w.count();
+				wordCount(reader, words);
+			}
 		}
+
 	}
 	
 	

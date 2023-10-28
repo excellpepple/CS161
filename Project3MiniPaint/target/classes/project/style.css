@@ -1,0 +1,7 @@
+.selected{
+	-fx-stroke: darkgrey;
+	-fx-stroke-width: 2;
+}
+.mode-selected{
+	-fx-opacity: 0.5;
+}

@@ -14,6 +14,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Ellipse;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
@@ -55,12 +56,15 @@ public class Controller {
 
 	@FXML private Pane pane;
 
-	private Color selectedColor = Color.BLACK;
+	private Color selectedColor;
 	private Node selectedNode;
 	private String insertMode;
 
 	@FXML
 	void initialize() {
+		redSlider.valueProperty().addListener(e -> colorChange());
+		greenSlider.valueProperty().addListener(e -> colorChange());
+		blueSlider.valueProperty().addListener(e -> colorChange());
 		
 	}
 	//Set insertMode and select the preview shape
@@ -152,8 +156,28 @@ public class Controller {
 			selectedNode.setOnMouseDragged(event -> moveShape(event.getX(), event.getY()));
 
 			pane.getChildren().add(selectedNode);
+
 //
+		}else if ("line".equals(insertMode)){
+			Line line = new Line();
+			line.setStartX(e.getX());
+			line.setStartY(e.getY());
+			line.setStroke(selectedColor);
+			select(line);
+			selectedNode.setOnMouseClicked(event -> select(line));
+			selectedNode.setOnMouseDragged(event -> moveShape(event.getX(), event.getY()));
+			pane.getChildren().add(line);
+
+		} else if ("circle".equals(insertMode)){
+			Ellipse ellipse = new Ellipse(e.getX(), e.getY() );
+//			ellipse.setCenterX(e.getX());
+//			ellipse.setCenterY(e.getY());
+			ellipse.setRadiusX(50);
+			ellipse.setRadiusY(100);
+			ellipse.setFill(selectedColor);
+			pane.getChildren().add(ellipse);
 		}
+
 	}
 
 	@FXML
@@ -163,7 +187,12 @@ public class Controller {
 			double fontSize = (((Text) selectedNode).getX() - ((Text) selectedNode).getY()) + (e.getX() - e.getY());
 			((Text) selectedNode).setFont(new Font(fontSize));
 
-		}
+		} /*else if ("circle".equals(insertMode)){
+			double radiusX = (((Ellipse) selectedNode).getCenterX() - ((Ellipse) selectedNode).getCenterY()) + e.getX();
+			double radiusY = (((Ellipse) selectedNode).getCenterX() - ((Ellipse) selectedNode).getCenterY()) + e.getY();
+			((Ellipse) selectedNode).setRadiusX(radiusX);
+			((Ellipse) selectedNode).setRadiusY(radiusY);
+		}*/
 		App.scene.setCursor(Cursor.CROSSHAIR);
 	}
 
@@ -188,7 +217,11 @@ public class Controller {
 	
 	//Adjust tool ribbon shape colors and set color for creating shapes
 	void colorChange() {
-		
+		selectedColor = Color.rgb((int) redSlider.getValue(), (int)  blueSlider.getValue(), (int) greenSlider.getValue());
+		menuCircle.setFill(selectedColor);
+		menuLine.setStroke(selectedColor);
+		menuRectangle.setFill(selectedColor);
+		menuText.setFill(selectedColor);
 	}
 
 	void select(Node n) {
