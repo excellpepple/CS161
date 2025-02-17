@@ -9,8 +9,5 @@
         <module name="Lab8CircleCatcher" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Lab8CircleCatcher" target="15" />
-    </bytecodeTargetLevel>
   </component>
 </project>
